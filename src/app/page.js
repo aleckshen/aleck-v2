@@ -17,8 +17,8 @@ export default function Home() {
           </div>
         </div>
         <div>
-          <div className="ml-[15px] text-[150px] leading-none font-medium">ALECK</div>
-          <div className="text-[150px] ml-[275px] leading-none font-medium">SHEN</div>
+          <div className="ml-[15px] text-[150px] leading-none font-semibold">ALECK</div>
+          <div className="text-[150px] ml-[275px] leading-none font-semibold">SHEN</div>
         </div>
       </div>
       
