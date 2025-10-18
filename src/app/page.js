@@ -17,7 +17,7 @@ export default function Home() {
             <div className="mb-[5px]">
               Terminal website?!?
             </div>
-            <Button />
+            <Button url="https://www.alecksterminal.com"/>
           </div>
         </div>
         <div>
