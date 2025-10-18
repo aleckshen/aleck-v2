@@ -1,4 +1,5 @@
 import NavBar from '@/components/NavBar'
+import Button from '@/components/Button'
 
 export default function Home() {
   return (
@@ -7,13 +8,16 @@ export default function Home() {
       <div className="flex justify-between flex-col h-screen">
         <NavBar />
         <div className="flex justify-end mt-[175px] mb-[175px] mr-[75px]">
-          <div className="mr-[125px]">
+          <div className="mr-[100px]">
             <span className="text-[25px]">Hello, my name is Aleck!</span> <br />
             I'm a second year computer science major studying at the University Of<br />
             Auckland, passionate about coding and problem solving.
           </div>
-          <div>
-            *CONNECT WITH ME
+          <div className="flex flex-col justify-center">
+            <div className="mb-[5px]">
+              Terminal website?!?
+            </div>
+            <Button />
           </div>
         </div>
         <div>
