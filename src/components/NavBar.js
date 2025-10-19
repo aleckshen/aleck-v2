@@ -5,11 +5,10 @@ import Link from 'next/link';
 export default function NavBar() {
 
     const name = 'ALECKSHEN';
-
     return (
         <nav className="flex justify-between items-center p-[15px]">
             <Link href="/" className="swap-text">
-                {/* splits name into letters */}
+                {/* split name into letters */}
                 <span className="top">
                 {name.split("").map((letter, i) => (
                     <span key={i} style={{ '--i': i }}>{letter}</span>

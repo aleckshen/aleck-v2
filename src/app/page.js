@@ -21,8 +21,8 @@ export default function Home() {
           </div>
         </div>
         <div>
-          <div className="ml-[15px] text-[150px] leading-none font-semibold">ALECK</div>
-          <div className="text-[150px] ml-[275px] leading-none font-semibold">SHEN</div>
+          <div className="ml-[15px] text-[150px] leading-none font-semibold opacity-0 animate-slideInLeft ">ALECK</div>
+          <div className="text-[150px] ml-[275px] leading-none font-semibold opacity-0 animate-slideInUp [animation-delay:0.3s]">SHEN</div>
         </div>
       </div>
       
