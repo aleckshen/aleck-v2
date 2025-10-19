@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+/* HOVER UNDERLINE EFFECT */
+
 .hover-underline {
   position: relative;
 }
@@ -21,4 +23,42 @@
 .hover-underline:hover::before {
   transform-origin: left;
   transform: scaleX(1);
+}
+
+/* HOVER TEXT SWITCH EFFECT */
+
+.swap-text {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  height: 1em;
+  line-height: 1em;
+  cursor: pointer;
+}
+
+.swap-text .top,
+.swap-text .bottom {
+  display: flex;
+}
+
+.swap-text span span {
+  display: inline-block;
+  transition: transform 0.45s cubic-bezier(0.77, 0, 0.175, 1);
+  transition-delay: calc(var(--i) * 0.03s); /* stagger timing */
+}
+
+/* bottom text sits below */
+.swap-text .bottom {
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+
+/* hover animation, letters move up one by one */
+.swap-text:hover .top span {
+  transform: translateY(-100%);
+}
+
+.swap-text:hover .bottom span {
+  transform: translateY(-100%);
 }
