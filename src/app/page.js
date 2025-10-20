@@ -28,7 +28,7 @@ export default function Home() {
               </div>
             ))}
           </div>
-          <div className="flex flex-col justify-center">
+          <div className="flex flex-col justify-center opacity-0 animate-fadeAfterIntro" style={{ animationDelay: '1.5s' }}>
             <div className="mb-[5px]">
               Terminal website?!?
             </div>
