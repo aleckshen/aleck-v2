@@ -13,7 +13,9 @@ export default function Home() {
     <div className="overflow-hidden">
 
       <div className="flex justify-between flex-col h-screen">
-        <NavBar />
+        <div className="opacity-0 animate-fadeAfterIntro" style={{ animationDelay: '1.5s' }}>
+          <NavBar />
+        </div>
         <div className="flex justify-end mt-[175px] mb-[175px] mr-[75px]">
           <div className="mr-[100px]">
             {introLines.map((line, index) => (

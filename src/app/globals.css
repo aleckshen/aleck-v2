@@ -115,5 +115,9 @@
     animation: slideInUp 1.7s cubic-bezier(0.25, 1, 0.5, 1) forwards,
     fadeIn 3s ease forwards;
   }
+
+  .animate-fadeAfterIntro {
+    animation: fadeIn 1s ease forwards;
+  }
 }
 
