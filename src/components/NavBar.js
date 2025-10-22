@@ -6,7 +6,7 @@ export default function NavBar() {
 
     const name = 'ALECKSHEN';
     return (
-        <nav className="flex justify-between items-center p-[15px] bg-white">
+        <nav className="flex justify-between items-center p-[15px]">
             <Link href="/" className="swap-text">
                 {/* split name into letters */}
                 <span className="top">

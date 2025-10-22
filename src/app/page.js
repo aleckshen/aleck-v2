@@ -1,5 +1,8 @@
+'use client';
+import { useEffect, useState } from "react";
 import NavBar from '@/components/NavBar'
 import Button from '@/components/Button'
+
 
 export default function Home() {
 
@@ -9,10 +12,35 @@ export default function Home() {
     "Auckland, passionate about coding and problem solving."
   ];
 
+  const [scrollProgress, setScrollProgress] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY || 0;
+      const fadeHeight = window.innerHeight * 0.65; // fade a bit faster
+      const progress = Math.min(scrollY / fadeHeight, 1);
+      setScrollProgress(progress);
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    handleScroll();
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const overlayMax = 0.15; // max black overlay opacity
+
+  const eased = Math.pow(scrollProgress, 0.7);
+  const overlayOpacity = Math.min(eased * overlayMax, overlayMax);
+
   return (
     <div>
 
       <div className="flex justify-between flex-col h-screen sticky top-0">
+        <div
+          aria-hidden="true"
+          className="absolute inset-0 bg-black pointer-events-none transition-opacity duration-200 ease-linear"
+          style={{ opacity: overlayOpacity }}
+        />
         <div className="opacity-0">
           <NavBar />
         </div>
@@ -41,7 +69,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="relative z-20 h-[1500px] bg-black">
+      <div className="relative z-20 h-[1500px] bg-white">
 
       </div>
 
