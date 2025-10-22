@@ -10,9 +10,9 @@ export default function Home() {
   ];
 
   return (
-    <div className="overflow-hidden">
+    <div>
 
-      <div className="flex justify-between flex-col h-screen">
+      <div className="flex justify-between flex-col h-screen sticky top-0">
         <div className="opacity-0">
           <NavBar />
         </div>
@@ -40,7 +40,11 @@ export default function Home() {
           <div className="text-[150px] ml-[275px] leading-none font-semibold opacity-0 animate-slideInUp [animation-delay:0.3s]">SHEN</div>
         </div>
       </div>
-      
+
+      <div className="relative z-20 h-[1500px] bg-black">
+
+      </div>
+
     </div>
   );
 }
