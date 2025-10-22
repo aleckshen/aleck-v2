@@ -1,7 +1,9 @@
 import "./globals.css";
+import 'lenis/dist/lenis.css';
 import { Inter } from 'next/font/google';
 import NavBar from '@/components/NavBar';
 import Footer from '@/components/Footer';
+import LenisScroll from '@/components/LenisScroll';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -25,7 +27,9 @@ export default function RootLayout({ children }) {
         >
           <NavBar />
         </div>
-        <main>{children}</main>
+        <main>
+          <LenisScroll>{children}</LenisScroll>
+        </main>
       </body>
     </html>
   );
