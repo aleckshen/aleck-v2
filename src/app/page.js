@@ -13,12 +13,15 @@ export default function Home() {
   ];
 
   const [scrollProgress, setScrollProgress] = useState(0);
+  const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollY = window.scrollY || 0;
-      const fadeHeight = window.innerHeight * 0.65; // fade a bit faster
-      const progress = Math.min(scrollY / fadeHeight, 1);
+      const currentScrollY = window.scrollY || 0;
+      setScrollY(currentScrollY);
+      
+      const fadeHeight = window.innerHeight * 0.65;
+      const progress = Math.min(currentScrollY / fadeHeight, 1);
       setScrollProgress(progress);
     };
 
@@ -27,10 +30,14 @@ export default function Home() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  //overlay fade effect
   const overlayMax = 0.15; // max black overlay opacity
-
   const eased = Math.pow(scrollProgress, 0.7);
   const overlayOpacity = Math.min(eased * overlayMax, overlayMax);
+
+  // parallax
+  const parallaxTranslate = scrollY * 0.05;
+  const parallaxScale = 1 + -scrollY * 0.0001;
 
   return (
     <div>
@@ -43,7 +50,11 @@ export default function Home() {
         <div className="opacity-0">
           <NavBar />
         </div>
-        <div className="flex justify-end mt-[175px] mb-[175px] mr-[75px]">
+        <div className="flex justify-end mt-[175px] mb-[175px] mr-[75px]"
+        style={{
+          transform: `translateY(${parallaxTranslate}px) scale(${parallaxScale})`,
+          transition: 'transform 0.1s linear, opacity 0.1s linear'
+        }}>
           <div className="mr-[100px]">
             {introLines.map((line, index) => (
               <div
@@ -62,7 +73,11 @@ export default function Home() {
             <Button url="https://www.alecksterminal.com"/>
           </div>
         </div>
-        <div>
+        <div
+        style={{
+          transform: `translateY(${parallaxTranslate}px) scale(${parallaxScale})`,
+          transition: 'transform 0.1s linear, opacity 0.1s linear'
+        }}>
           <div className="ml-[15px] text-[150px] leading-none font-semibold opacity-0 animate-slideInLeft ">ALECK</div>
           <div className="text-[150px] ml-[275px] leading-none font-semibold opacity-0 animate-slideInUp [animation-delay:0.3s]">SHEN</div>
         </div>
