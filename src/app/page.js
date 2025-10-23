@@ -37,7 +37,6 @@ export default function Home() {
 
       <div className="flex justify-between flex-col h-screen sticky top-0">
         <div
-          aria-hidden="true"
           className="absolute inset-0 bg-black pointer-events-none transition-opacity duration-200 ease-linear"
           style={{ opacity: overlayOpacity }}
         />
@@ -70,7 +69,32 @@ export default function Home() {
       </div>
 
       <div className="relative z-20 h-[1500px] bg-white">
-
+        <div className="flex">
+          <div className="pl-8 pt-20 text-8xl">
+            Projects
+          </div>
+          <div className="pt-20">[4]</div>
+        </div>
+        <div className="ml-8 mr-8 mt-12 flex gap-8">
+          <div className="flex-1">
+            <div className="bg-[#D2D6E0] w-full h-100"></div>
+            <div className="pt-2">Terminal based portfolio</div>
+          </div>
+          <div className="flex-1">
+            <div className="bg-[#EEEEEE] w-full h-100"></div>
+            <div className="pt-2">Personal website</div>
+          </div>
+        </div>
+        <div className="ml-8 mr-8 mt-18 flex gap-8">
+          <div className="flex-1">
+            <div className="bg-[#D4D4D4] w-full h-100"></div>
+            <div className="pt-2">Pylib, cli tool</div>
+          </div>
+          <div className="flex-1">
+            <div className="bg-[#D6E1D7] w-full h-100"></div>
+            <div className="pt-2">UOA/WINCS hackathon template</div>
+          </div>
+        </div>
       </div>
 
     </div>

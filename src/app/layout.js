@@ -30,6 +30,7 @@ export default function RootLayout({ children }) {
         <main>
           <LenisScroll>{children}</LenisScroll>
         </main>
+        <Footer />
       </body>
     </html>
   );
