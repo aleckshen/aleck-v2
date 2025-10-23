@@ -77,22 +77,26 @@ export default function Home() {
         </div>
         <div className="ml-8 mr-8 mt-12 flex gap-8">
           <div className="flex-1">
-            <div className="bg-[#D2D6E0] w-full h-100"></div>
+            <div className="bg-[#D2D6E0] w-full aspect-[16/9]"></div>
             <div className="pt-2">Terminal based portfolio</div>
+            <div className="text-[#727272]">—  next, react, typescript</div>
           </div>
           <div className="flex-1">
-            <div className="bg-[#EEEEEE] w-full h-100"></div>
+            <div className="bg-[#EEEEEE] w-full aspect-[16/9]"></div>
             <div className="pt-2">Personal website</div>
+            <div className="text-[#727272]">—  next, react, javascript</div>
           </div>
         </div>
         <div className="ml-8 mr-8 mt-18 flex gap-8">
           <div className="flex-1">
-            <div className="bg-[#D4D4D4] w-full h-100"></div>
+            <div className="bg-[#D4D4D4] w-full aspect-[16/9]"></div>
             <div className="pt-2">Pylib, cli tool</div>
+            <div className="text-[#727272]">— python</div>
           </div>
           <div className="flex-1">
-            <div className="bg-[#D6E1D7] w-full h-100"></div>
+            <div className="bg-[#D6E1D7] w-full aspect-[16/9]"></div>
             <div className="pt-2">UOA/WINCS hackathon template</div>
+            <div className="text-[#727272]">—  react, vite</div>
           </div>
         </div>
       </div>
