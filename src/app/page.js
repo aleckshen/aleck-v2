@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import NavBar from '@/components/NavBar'
 import Button from '@/components/Button'
-
+import ProjectCard from '@/components/ProjectCard'
 
 export default function Home() {
 
@@ -76,32 +76,32 @@ export default function Home() {
           <div className="pt-21">[4]</div>
           <div className="text-4xl pt-20 pl-28">
             <div>Here are some of the projects I have worked on</div>
-            <div className="pl-54">across my years studying computer science.</div>
+            <div className="pl-54 pt-2">across my years studying computer science.</div>
           </div>
         </div>
-        <div className="ml-8 mr-8 mt-18 flex gap-8">
-          <div className="flex-1">
-            <div className="bg-[#D2D6E0] w-full aspect-[16/9]"></div>
-            <div className="pt-2">Terminal based portfolio</div>
-            <div className="text-[#727272]">—  next, react, typescript</div>
-          </div>
-          <div className="flex-1">
-            <div className="bg-[#EEEEEE] w-full aspect-[16/9]"></div>
-            <div className="pt-2">Personal website</div>
-            <div className="text-[#727272]">—  next, react, javascript</div>
-          </div>
+        <div className="ml-8 mr-8 mt-20 flex gap-8">
+          <ProjectCard
+            bgColor={"#D2D6E0"}
+            title={"Terminal based portfolio"}
+            details={"—  next, react, typescript"}
+          />
+          <ProjectCard
+            bgColor={"#EEEEEE"}
+            title={"Personal website"}
+            details={"—  next, react, javascript"}
+          />
         </div>
         <div className="ml-8 mr-8 mt-18 flex gap-8">
-          <div className="flex-1">
-            <div className="bg-[#D4D4D4] w-full aspect-[16/9]"></div>
-            <div className="pt-2">Pylib, cli tool</div>
-            <div className="text-[#727272]">— python</div>
-          </div>
-          <div className="flex-1">
-            <div className="bg-[#D6E1D7] w-full aspect-[16/9]"></div>
-            <div className="pt-2">UOA/WINCS hackathon template</div>
-            <div className="text-[#727272]">—  react, vite</div>
-          </div>
+          <ProjectCard
+            bgColor={"#D4D4D4"}
+            title={"Pylib, cli tool"}
+            details={"— python"}
+          />
+          <ProjectCard
+            bgColor={"#D6E1D7"}
+            title={"UOA/WINCS hackathon template"}
+            details={"—  react, vite"}
+          />
         </div>
       </div>
 
