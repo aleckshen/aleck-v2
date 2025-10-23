@@ -70,12 +70,16 @@ export default function Home() {
 
       <div className="relative z-20 h-[1500px] bg-white">
         <div className="flex">
-          <div className="pl-8 pt-20 text-8xl">
-            Projects
+          <div className="pl-8 pt-20 text-6xl">
+            PROJECTS
           </div>
-          <div className="pt-20">[4]</div>
+          <div className="pt-21">[4]</div>
+          <div className="text-4xl pt-20 pl-28">
+            <div>Here are some of the projects I have worked on</div>
+            <div className="pl-54">across my years studying computer science.</div>
+          </div>
         </div>
-        <div className="ml-8 mr-8 mt-12 flex gap-8">
+        <div className="ml-8 mr-8 mt-18 flex gap-8">
           <div className="flex-1">
             <div className="bg-[#D2D6E0] w-full aspect-[16/9]"></div>
             <div className="pt-2">Terminal based portfolio</div>
