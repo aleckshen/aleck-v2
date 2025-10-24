@@ -42,7 +42,7 @@ export default function Home() {
   return (
     <div>
 
-      <div className="flex justify-between flex-col h-screen sticky top-0">
+      <section className="flex justify-between flex-col h-screen sticky top-0">
         <div
           className="absolute inset-0 bg-black pointer-events-none transition-opacity duration-200 ease-linear"
           style={{ opacity: overlayOpacity }}
@@ -81,9 +81,9 @@ export default function Home() {
           <div className="ml-[15px] text-[150px] leading-none font-semibold opacity-0 animate-slideInLeft ">ALECK</div>
           <div className="text-[150px] ml-[275px] leading-none font-semibold opacity-0 animate-slideInUp [animation-delay:0.3s]">SHEN</div>
         </div>
-      </div>
+      </section>
 
-      <div className="relative z-20 h-[1500px] bg-white">
+      <section className="relative z-20 h-[1500px] bg-white">
         <div className="flex">
           <div className="pl-8 pt-20 text-6xl">
             PROJECTS
@@ -118,7 +118,7 @@ export default function Home() {
             details={"—  react, vite"}
           />
         </div>
-      </div>
+      </section>
 
     </div>
   );
