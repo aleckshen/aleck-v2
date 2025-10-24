@@ -26,7 +26,7 @@ export default function Footer() {
                 </div>
                 <div className="flex flex-col gap-3">
                     <div>New Zealand Local Time</div>
-                    <div>10:07AM</div>
+                    <div>10:07 AM</div>
                 </div>
             </div>
 

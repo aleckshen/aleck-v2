@@ -1,8 +1,8 @@
 'use client';
 import { useEffect, useState } from "react";
-import NavBar from '@/components/NavBar'
-import Button from '@/components/Button'
-import ProjectCard from '@/components/ProjectCard'
+import NavBar from '@/components/NavBar';
+import Button from '@/components/Button';
+import ProjectCard from '@/components/ProjectCard';
 
 export default function Home() {
 
@@ -83,13 +83,13 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="relative z-20 h-[1500px] bg-white">
-        <div className="flex">
-          <div className="pl-8 pt-20 text-6xl">
+      <section className="relative z-20 h-auto bg-white">
+        <div className="flex pt-22">
+          <div className="pl-8 pt-20 text-5xl">
             PROJECTS
           </div>
           <div className="pt-21">[4]</div>
-          <div className="text-4xl pt-20 pl-28">
+          <div className="text-4xl pt-20 pl-28 pb-8">
             <div>Here are some of the projects I have worked on</div>
             <div className="pl-54 pt-2">across my years studying computer science.</div>
           </div>
@@ -106,7 +106,7 @@ export default function Home() {
             details={"—  next, react, javascript"}
           />
         </div>
-        <div className="ml-8 mr-8 mt-18 flex gap-8">
+        <div className="pb-68 ml-8 mr-8 mt-18 flex gap-8">
           <ProjectCard
             bgColor={"#D4D4D4"}
             title={"Pylib, cli tool"}
