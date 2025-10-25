@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import NavBar from '@/components/NavBar';
 import Button from '@/components/Button';
 import ProjectCard from '@/components/ProjectCard';
+import useScrollIntoView from '@/hooks/useScrollIntoView';
 
 export default function Home() {
 
@@ -15,6 +16,7 @@ export default function Home() {
 
   const [scrollProgress, setScrollProgress] = useState(0);
   const [scrollY, setScrollY] = useState(0);
+  const [projectsRef, projectsInView] = useScrollIntoView(0.3);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -92,9 +94,19 @@ export default function Home() {
             PROJECTS
           </div>
           <div className="pt-21">[4]</div>
-          <div className="text-5xl pt-20 pl-20 pb-8">
-            <div>Here are some of the projects I have worked</div>
-            <div className="pl-54 pt-2">on across my years studying comp sci.</div>
+          <div ref={projectsRef} className="text-5xl pt-20 pl-20 pb-8">
+            <div 
+              className={`opacity-0 ${projectsInView ? 'animate-fadeUpLine' : ''}`}
+              style={{ animationDelay: projectsInView ? '0s' : '0s' }}
+            >
+              Here are some of the projects I have worked
+            </div>
+            <div 
+              className={`pl-54 pt-2 opacity-0 ${projectsInView ? 'animate-fadeUpLine' : ''}`}
+              style={{ animationDelay: projectsInView ? '0.3s' : '0s' }}
+            >
+              on across my years studying comp sci.
+            </div>
           </div>
         </div>
         <div className="ml-8 mr-8 mt-20 flex gap-8">
