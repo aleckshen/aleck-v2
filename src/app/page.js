@@ -126,7 +126,7 @@ export default function Home() {
       <section className="relative flex flex-col bg-white pb-50 p-8">
         <div className="flex">
           <div className="flex flex-col text-5xl w-428 gap-3 ml-8">
-            <div className="flex justify-end">Hello, my name is Aleck! I love coding</div>
+            <div className="pl-42">Hello, my name is Aleck! I love coding</div>
             <div>and problem solving, crafting simplicity</div>
             <div>through elegant code.</div>
           </div>
@@ -135,25 +135,35 @@ export default function Home() {
             <div>[0]</div>
           </div>
         </div>
-        <div className="flex pt-18 pl-12 gap-42">
-          <div className="bg-[#D9D9D9] h-110 w-80"></div>
+        <div className="flex pt-32 pl-9 gap-28">
+          <div className="bg-[#D9D9D9] h-130 w-100"></div>
           <div className="flex flex-col">
             <div className="pb-2">MORE</div>
-            <div className="text-[#4F4F4F]">I was born in May 13, 2005. Some of my</div>
-            <div className="text-[#4F4F4F]">favourite hobbies include rock climbing,</div>
-            <div className="text-[#4F4F4F]">running and creative arts.</div>
+            <div className="text-[#4F4F4F] w-76">
+              I was born in May 13, 2005. Some of my
+              favourite hobbies include rock climbing,
+              running and creative arts.
+            </div>
           </div>
           <div className="flex flex-col">
             <div className="pb-2">EXPERIENCE</div>
-            <div className="text-[#4F4F4F]">I'm currently a tech/education executive</div>
-            <div className="text-[#4F4F4F]">at the University of Auckland computer</div>
-            <div className="text-[#4F4F4F]">science club!</div>
-            <div className="pt-10 pb-2">RESUME BELOW :D</div>
+            <div className="text-[#4F4F4F] w-76">
+              I'm currently a tech/education executive
+              at the Univeristy of Auckland computer
+              science club. To find out more about my
+              experience click the button below for 
+              my attached resume!
+            </div>
+            <div className="pt-10 pb-2">RESUME BELOW</div>
             <div>
               <Button url="https://www.alecksterminal.com"/>
             </div>
           </div>
         </div>
+      </section>
+
+      <section className="relative flex justify-center items-center h-dvh w-dvw bg-white pb-50">
+        DESIGNED AND CODED BY ALECK.
       </section>
 
     </div>
