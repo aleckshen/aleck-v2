@@ -42,6 +42,7 @@ export default function Home() {
   return (
     <div>
 
+      {/*LANDING PAGE*/}
       <section className="flex justify-between flex-col h-screen sticky top-0">
         <div
           className="absolute inset-0 bg-black pointer-events-none transition-opacity duration-200 ease-linear"
@@ -83,15 +84,16 @@ export default function Home() {
         </div>
       </section>
 
+      {/*PROJECTS SECTION*/}
       <section className="relative z-20 h-auto bg-white">
         <div className="flex pt-22">
           <div className="pl-8 pt-20 text-5xl">
             PROJECTS
           </div>
           <div className="pt-21">[4]</div>
-          <div className="text-4xl pt-20 pl-28 pb-8">
-            <div>Here are some of the projects I have worked on</div>
-            <div className="pl-54 pt-2">across my years studying computer science.</div>
+          <div className="text-5xl pt-20 pl-20 pb-8">
+            <div>Here are some of the projects I have worked</div>
+            <div className="pl-54 pt-2">on across my years studying comp sci.</div>
           </div>
         </div>
         <div className="ml-8 mr-8 mt-20 flex gap-8">
@@ -117,6 +119,40 @@ export default function Home() {
             title={"UOA/WINCS hackathon template"}
             details={"—  react, vite"}
           />
+        </div>
+      </section>
+
+      {/*ABOUT ME SECTION*/}
+      <section className="relative flex flex-col bg-white pb-50 p-8">
+        <div className="flex">
+          <div className="flex flex-col text-5xl w-428 gap-3 ml-8">
+            <div className="flex justify-end">Hello, my name is Aleck! I love coding</div>
+            <div>and problem solving, crafting simplicity</div>
+            <div>through elegant code.</div>
+          </div>
+          <div className="flex pr-10 pt-2">
+            <div className="text-5xl flex justify-end w-[25vw]">ABOUT ME</div>
+            <div>[0]</div>
+          </div>
+        </div>
+        <div className="flex pt-18 pl-12 gap-42">
+          <div className="bg-[#D9D9D9] h-110 w-80"></div>
+          <div className="flex flex-col">
+            <div className="pb-2">MORE</div>
+            <div className="text-[#4F4F4F]">I was born in May 13, 2005. Some of my</div>
+            <div className="text-[#4F4F4F]">favourite hobbies include rock climbing,</div>
+            <div className="text-[#4F4F4F]">running and creative arts.</div>
+          </div>
+          <div className="flex flex-col">
+            <div className="pb-2">EXPERIENCE</div>
+            <div className="text-[#4F4F4F]">I'm currently a tech/education executive</div>
+            <div className="text-[#4F4F4F]">at the University of Auckland computer</div>
+            <div className="text-[#4F4F4F]">science club!</div>
+            <div className="pt-10 pb-2">RESUME BELOW :D</div>
+            <div>
+              <Button url="https://www.alecksterminal.com"/>
+            </div>
+          </div>
         </div>
       </section>
 
