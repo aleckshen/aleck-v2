@@ -97,28 +97,40 @@ export default function Home() {
           </div>
         </div>
         <div className="ml-8 mr-8 mt-20 flex gap-8">
-          <ProjectCard
-            bgColor={"#D2D6E0"}
-            title={"Terminal based portfolio"}
-            details={"—  next, react, typescript"}
-          />
-          <ProjectCard
-            bgColor={"#EEEEEE"}
-            title={"Personal website"}
-            details={"—  next, react, javascript"}
-          />
+          <div className="flex-1">
+            <ProjectCard
+              bgColor={"#D2D6E0"}
+              title={"Terminal based portfolio"}
+              details={"—  next, react, typescript"}
+              image={"/terminal-website.png"}
+            />
+          </div>
+          <div className="flex-1">
+            <ProjectCard
+              bgColor={"#EEEEEE"}
+              title={"Personal website"}
+              details={"—  next, react, javascript"}
+              image={"/personal-website.png"}
+            />
+          </div>
         </div>
         <div className="pb-68 ml-8 mr-8 mt-18 flex gap-8">
-          <ProjectCard
-            bgColor={"#D4D4D4"}
-            title={"Pylib, cli tool"}
-            details={"— python"}
-          />
-          <ProjectCard
-            bgColor={"#D6E1D7"}
-            title={"UOA/WINCS hackathon template"}
-            details={"—  react, vite"}
-          />
+          <div className="flex-1">
+            <ProjectCard
+              bgColor={"#D4D4D4"}
+              title={"Pylib, cli tool"}
+              details={"— python"}
+              image={"/pylib.png"}
+            />
+          </div>
+          <div className="flex-1">
+            <ProjectCard
+              bgColor={"#D6E1D7"}
+              title={"UOA/WINCS hackathon template"}
+              details={"—  react, vite"}
+              image={"/hackathon.png"}
+            />
+          </div>
         </div>
       </section>
 
@@ -142,7 +154,11 @@ export default function Home() {
             <div className="text-[#4F4F4F] w-76">
               I was born in May 13, 2005. Some of my
               favourite hobbies include rock climbing,
-              running and creative arts.
+              running and creative arts. I'm super
+              passionate about coding, and often code
+              in my spare time (check my github cont-
+              tributions). I also have a loving fat
+              cat named Mochi!
             </div>
           </div>
           <div className="flex flex-col">
@@ -154,7 +170,7 @@ export default function Home() {
               experience click the button below for 
               my attached resume!
             </div>
-            <div className="pt-10 pb-2">RESUME BELOW</div>
+            <div className="pt-30 pb-2">RESUME BELOW</div>
             <div>
               <Button url="https://www.alecksterminal.com"/>
             </div>
