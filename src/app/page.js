@@ -91,10 +91,12 @@ export default function Home() {
       {/*PROJECTS SECTION*/}
       <section className="relative z-20 h-auto bg-white">
         <div className="flex pt-22">
-          <div className="pl-8 pt-20 text-5xl">
-            PROJECTS
+          <div className={`flex opacity-0 ${projectsInView ? 'animate-fadeUpLine' : ''}`}>
+            <div className="pl-8 pt-20 text-5xl">
+              PROJECTS
+            </div>
+            <div className="pt-21">[4]</div>
           </div>
-          <div className="pt-21">[4]</div>
           <div ref={projectsRef} className="text-5xl pt-20 pl-20 pb-8">
             <div 
               className={`opacity-0 ${projectsInView ? 'animate-fadeUpLine' : ''}`}
