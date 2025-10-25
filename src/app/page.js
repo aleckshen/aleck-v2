@@ -16,8 +16,8 @@ export default function Home() {
 
   const [scrollProgress, setScrollProgress] = useState(0);
   const [scrollY, setScrollY] = useState(0);
-  const [projectsRef, projectsInView] = useScrollIntoView(0.3);
-  const [projectsPhotosRef, projectsPhotosInView] = useScrollIntoView(0.1);
+  const [projectsRef, projectsInView] = useScrollIntoView(0.7);
+  const [projectsPhotosRef, projectsPhotosInView] = useScrollIntoView(0.15);
 
   useEffect(() => {
     const handleScroll = () => {
