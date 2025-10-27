@@ -190,7 +190,7 @@ export default function Home() {
         </div>
         <div className="flex pt-32 pl-9 gap-28">
           <video 
-            className="h-140 w-100 object-cover rounded-3xl"
+            className="h-120 w-80 object-cover rounded-3xl"
             autoPlay 
             loop 
             muted
@@ -201,7 +201,7 @@ export default function Home() {
           </video>
           <div className="flex flex-col">
             <div className="pb-2">MORE</div>
-            <div className="text-[#4F4F4F] w-76">
+            <div className="text-[#4F4F4F] w-76 pb-8">
               I was born in May 13, 2005. Some of my
               favourite hobbies include rock climbing,
               running and creative arts. I'm super
@@ -209,6 +209,14 @@ export default function Home() {
               in my spare time (check my github cont-
               tributions). I also have a loving fat
               cat named Mochi!
+            </div>
+            <div className="pb-2">RANDOM FACTS</div>
+            <div className="text-[#4F4F4F] w-76">
+              - My favourite animal is a dolphin! <br />
+              - I love tiramisu with all my heart <br />
+              - Rainy days are my favourite days <br />
+              - My monkey type heatmap is greener
+              then my github heatmap...
             </div>
           </div>
           <div className="flex flex-col">
@@ -220,7 +228,7 @@ export default function Home() {
               experience click the button below for 
               my attached resume!
             </div>
-            <div className="pt-30 pb-2">RESUME BELOW</div>
+            <div className="pt-19 pb-2">RESUME BELOW</div>
             <div>
               <Button url="https://www.alecksterminal.com"/>
             </div>
