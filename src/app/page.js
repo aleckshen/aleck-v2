@@ -18,7 +18,7 @@ export default function Home() {
   const [scrollY, setScrollY] = useState(0);
   const [projectsRef, projectsInView] = useScrollIntoView(0.7);
   const [projectsPhotosRef, projectsPhotosInView] = useScrollIntoView(0.15);
-  const [aboutMeTitleRef, AboutMeTitleInView] = useScrollIntoView(0.45);
+  const [aboutMeTitleRef, AboutMeTitleInView] = useScrollIntoView(0.55);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -131,6 +131,7 @@ export default function Home() {
                 title={"Personal website"}
                 details={"—  next, react, javascript"}
                 image={"/personal-website.png"}
+                hoverImage={"/hover-terminal-website.png"}
               />
             </div>
           </div>
@@ -142,6 +143,7 @@ export default function Home() {
                 title={"Pylib, cli tool"}
                 details={"— python"}
                 image={"/pylib.png"}
+                hoverImage={"/hover-terminal-website.png"}
               />
             </div>
             <div className="flex-1">
@@ -150,6 +152,7 @@ export default function Home() {
                 title={"UOA/WINCS hackathon template"}
                 details={"—  react, vite"}
                 image={"/hackathon.png"}
+                hoverImage={"/hover-terminal-website.png"}
               />
             </div>
           </div>
@@ -186,7 +189,16 @@ export default function Home() {
           </div>
         </div>
         <div className="flex pt-32 pl-9 gap-28">
-          <div className="bg-[#D9D9D9] h-130 w-100"></div>
+          <video 
+            className="h-140 w-100 object-cover rounded-3xl"
+            autoPlay 
+            loop 
+            muted
+            playsInline
+          >
+            <source src="/video.MOV" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
           <div className="flex flex-col">
             <div className="pb-2">MORE</div>
             <div className="text-[#4F4F4F] w-76">
