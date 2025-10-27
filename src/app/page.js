@@ -122,6 +122,7 @@ export default function Home() {
                 title={"Terminal based portfolio"}
                 details={"—  next, react, typescript"}
                 image={"/terminal-website.png"}
+                hoverImage={"/hover-terminal-website.png"}
               />
             </div>
             <div className="flex-1">
