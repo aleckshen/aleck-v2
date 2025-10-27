@@ -18,6 +18,7 @@ export default function Home() {
   const [scrollY, setScrollY] = useState(0);
   const [projectsRef, projectsInView] = useScrollIntoView(0.7);
   const [projectsPhotosRef, projectsPhotosInView] = useScrollIntoView(0.15);
+  const [aboutMeTitleRef, AboutMeTitleInView] = useScrollIntoView(0.45);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -156,15 +157,31 @@ export default function Home() {
 
       {/*ABOUT ME SECTION*/}
       <section className="relative flex flex-col bg-white pb-50 p-8">
-        <div className="flex">
+        <div ref={aboutMeTitleRef} className="flex">
           <div className="flex flex-col text-5xl w-428 gap-3 ml-8">
-            <div className="pl-42">Hello, my name is Aleck! I love coding</div>
-            <div>and problem solving, crafting simplicity</div>
-            <div>through elegant code.</div>
+            <div className={`opacity-0 pl-42 
+              ${AboutMeTitleInView ? 'animate-fadeUpLine' : ''}`}
+              style={{ animationDelay: AboutMeTitleInView ? '0.0s' : '0s' }}
+              >Hello, my name is Aleck! I love coding
+            </div>
+            <div className={`opacity-0 ${AboutMeTitleInView ? 'animate-fadeUpLine' : ''}`}
+              style={{ animationDelay: AboutMeTitleInView ? '0.3s' : '0s' }}
+              >and problem solving, crafting simplicity
+            </div>
+            <div className={`opacity-0 ${AboutMeTitleInView ? 'animate-fadeUpLine' : ''}`}
+              style={{ animationDelay: AboutMeTitleInView ? '0.6s' : '0s' }}
+              >through elegant code.
+            </div>
           </div>
           <div className="flex pr-10 pt-2">
-            <div className="text-5xl flex justify-end w-[25vw]">ABOUT ME</div>
-            <div>[0]</div>
+            <div className={`opacity-0 text-5xl flex justify-end w-[25vw] 
+              ${AboutMeTitleInView ? 'animate-fadeUpLine' : ''}`}
+              >ABOUT ME
+            </div>
+            <div className={`opacity-0 
+              ${AboutMeTitleInView ? 'animate-fadeUpLine' : ''}`}
+              >[0]
+            </div>
           </div>
         </div>
         <div className="flex pt-32 pl-9 gap-28">
