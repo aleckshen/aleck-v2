@@ -191,9 +191,9 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="flex pt-18 pl-9 gap-28">
+        <div className="flex pt-18 gap-28 justify-between pl-8 pr-8">
           <video 
-            className="h-120 w-80 object-cover rounded-3xl"
+            className="h-125 w-85 object-cover rounded-3xl"
             autoPlay 
             loop 
             muted
@@ -202,15 +202,16 @@ export default function Home() {
             <source src="/video.MOV" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
-          <div className="flex flex-col justify-center">
+          <div className="relative flex flex-col">
+            <div className="absolute bottom-0 left-0 w-6 h-6 border-b-2 border-l-2 border-black"></div>
             <div className="pb-2">MORE</div>
-            <div className="text-[#4F4F4F] w-76 pb-8">
+            <div className="text-[#4F4F4F] w-94 pb-8">
               I was born in May 13, 2005. Some of my
               favourite hobbies include rock climbing,
               running and creative arts. I'm super
               passionate about coding, and often code
-              in my spare time (check my github cont-
-              tributions). I also have a loving fat
+              in my spare time (check my github contribti-
+              ons). I also have a loving fat
               cat named Mochi!
             </div>
             <div className="pb-2">SOCIAL MEDIA</div>
@@ -220,19 +221,26 @@ export default function Home() {
               <FaInstagramSquare size={30}/>
             </div>
           </div>
-          <div className="flex flex-col pt-[44px] justify-center pb-10">
+          <div className="relative flex flex-col">
+            <div className="absolute top-0 right-0 w-6 h-6 border-t-2 border-r-2 border-black"></div>
             <div className="pb-2">EXPERIENCE</div>
-            <div className="text-[#4F4F4F] w-76">
+            <div className="text-[#4F4F4F] w-89 pb-8">
               I'm currently a tech/education executive
               at the Univeristy of Auckland computer
               science club. To find out more about my
-              experience click the button below for 
-              my attached resume!
+              experience  and skills, click the button 
+              below to find my attached resume!
             </div>
-            <div className="pt-19 pb-2">RESUME BELOW</div>
+            <div className="pb-2">RESUME BELOW</div>
             <div>
               <Button url="https://www.alecksterminal.com"/>
             </div>
+          </div>
+        </div>
+        <div className="relative ml-[45.5%] -mt-[7.5rem] w-[40vw] text-center">
+          <div>
+            "Perfection is achieved not when there is nothing more to add, but when there is nothing left to take away." 
+            — Antoine de Saint-Exupéry
           </div>
         </div>
       </section>
