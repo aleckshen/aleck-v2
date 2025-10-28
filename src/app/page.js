@@ -135,7 +135,7 @@ export default function Home() {
                 title={"Personal website"}
                 details={"—  next, react, javascript"}
                 image={"/personal-website.png"}
-                hoverImage={"/hover-terminal-website.png"}
+                hoverImage={"/hover-personal-website.png"}
               />
             </div>
           </div>
@@ -147,7 +147,7 @@ export default function Home() {
                 title={"Pylib, cli tool"}
                 details={"— python"}
                 image={"/pylib.png"}
-                hoverImage={"/hover-terminal-website.png"}
+                hoverImage={"/hover-pylib.png"}
               />
             </div>
             <div className="flex-1">
@@ -156,7 +156,7 @@ export default function Home() {
                 title={"UOA/WINCS hackathon template"}
                 details={"—  react, vite"}
                 image={"/hackathon.png"}
-                hoverImage={"/hover-terminal-website.png"}
+                hoverImage={"/hover-hackathon.png"}
               />
             </div>
           </div>
