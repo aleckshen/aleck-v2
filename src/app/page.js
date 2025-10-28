@@ -216,9 +216,15 @@ export default function Home() {
             </div>
             <div className="pb-2">SOCIAL MEDIA</div>
             <div className="flex gap-4">
-              <FaGithub size={30}/>
-              <FaLinkedin size={30}/>
-              <FaInstagramSquare size={30}/>
+              <div className="hover:text-[#979797] text-[#BAB9B9] transition-colors duration-300 cursor-pointer">
+                <FaGithub size={30} />
+              </div>
+              <div className="hover:text-[#979797] text-[#BAB9B9] transition-colors duration-300 cursor-pointer">
+                <FaLinkedin size={30} />
+              </div>
+              <div className="hover:text-[#979797] text-[#BAB9B9] transition-colors duration-300 cursor-pointer">
+                <FaInstagramSquare size={30} />
+              </div>
             </div>
           </div>
           <div className="relative flex flex-col">
