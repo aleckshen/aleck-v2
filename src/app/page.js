@@ -5,6 +5,9 @@ import NavBar from '@/components/NavBar';
 import Button from '@/components/Button';
 import ProjectCard from '@/components/ProjectCard';
 import useScrollIntoView from '@/hooks/useScrollIntoView';
+import { FaGithub } from "react-icons/fa";
+import { FaInstagramSquare } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 
 export default function Home() {
 
@@ -188,7 +191,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="flex pt-32 pl-9 gap-28">
+        <div className="flex pt-18 pl-9 gap-28">
           <video 
             className="h-120 w-80 object-cover rounded-3xl"
             autoPlay 
@@ -199,7 +202,7 @@ export default function Home() {
             <source src="/video.MOV" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
-          <div className="flex flex-col">
+          <div className="flex flex-col justify-center">
             <div className="pb-2">MORE</div>
             <div className="text-[#4F4F4F] w-76 pb-8">
               I was born in May 13, 2005. Some of my
@@ -210,16 +213,14 @@ export default function Home() {
               tributions). I also have a loving fat
               cat named Mochi!
             </div>
-            <div className="pb-2">RANDOM FACTS</div>
-            <div className="text-[#4F4F4F] w-76">
-              - My favourite animal is a dolphin! <br />
-              - I love tiramisu with all my heart <br />
-              - Rainy days are my favourite days <br />
-              - My monkey type heatmap is greener
-              then my github heatmap...
+            <div className="pb-2">SOCIAL MEDIA</div>
+            <div className="flex gap-4">
+              <FaGithub size={30}/>
+              <FaLinkedin size={30}/>
+              <FaInstagramSquare size={30}/>
             </div>
           </div>
-          <div className="flex flex-col">
+          <div className="flex flex-col pt-[44px] justify-center pb-10">
             <div className="pb-2">EXPERIENCE</div>
             <div className="text-[#4F4F4F] w-76">
               I'm currently a tech/education executive
