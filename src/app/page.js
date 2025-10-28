@@ -21,7 +21,8 @@ export default function Home() {
   const [scrollY, setScrollY] = useState(0);
   const [projectsRef, projectsInView] = useScrollIntoView(0.7);
   const [projectsPhotosRef, projectsPhotosInView] = useScrollIntoView(0.15);
-  const [aboutMeTitleRef, AboutMeTitleInView] = useScrollIntoView(0.55);
+  const [aboutMeTitleRef, aboutMeTitleInView] = useScrollIntoView(0.55);
+  const [aboutMeSectionRef, aboutMeSectionInView] = useScrollIntoView(0.55);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -167,31 +168,32 @@ export default function Home() {
         <div ref={aboutMeTitleRef} className="flex">
           <div className="flex flex-col text-5xl w-428 gap-3 ml-8">
             <div className={`opacity-0 pl-42 
-              ${AboutMeTitleInView ? 'animate-fadeUpLine' : ''}`}
-              style={{ animationDelay: AboutMeTitleInView ? '0.0s' : '0s' }}
+              ${aboutMeTitleInView ? 'animate-fadeUpLine' : ''}`}
+              style={{ animationDelay: aboutMeTitleInView ? '0.0s' : '0s' }}
               >Hello, my name is Aleck! I love coding
             </div>
-            <div className={`opacity-0 ${AboutMeTitleInView ? 'animate-fadeUpLine' : ''}`}
-              style={{ animationDelay: AboutMeTitleInView ? '0.3s' : '0s' }}
+            <div className={`opacity-0 ${aboutMeTitleInView ? 'animate-fadeUpLine' : ''}`}
+              style={{ animationDelay: aboutMeTitleInView ? '0.3s' : '0s' }}
               >and problem solving, crafting simplicity
             </div>
-            <div className={`opacity-0 ${AboutMeTitleInView ? 'animate-fadeUpLine' : ''}`}
-              style={{ animationDelay: AboutMeTitleInView ? '0.6s' : '0s' }}
+            <div className={`opacity-0 ${aboutMeTitleInView ? 'animate-fadeUpLine' : ''}`}
+              style={{ animationDelay: aboutMeTitleInView ? '0.6s' : '0s' }}
               >through elegant code.
             </div>
           </div>
           <div className="flex pr-10 pt-2">
             <div className={`opacity-0 text-5xl flex justify-end w-[25vw] 
-              ${AboutMeTitleInView ? 'animate-fadeUpLine' : ''}`}
+              ${aboutMeTitleInView ? 'animate-fadeUpLine' : ''}`}
               >ABOUT ME
             </div>
             <div className={`opacity-0 
-              ${AboutMeTitleInView ? 'animate-fadeUpLine' : ''}`}
+              ${aboutMeTitleInView ? 'animate-fadeUpLine' : ''}`}
               >[0]
             </div>
           </div>
         </div>
-        <div className="flex pt-18 gap-28 justify-between pl-8 pr-8">
+        <div ref={aboutMeSectionRef} className={`opacity-0 flex pt-18 gap-28 justify-between pl-8 pr-8
+          ${aboutMeSectionInView ? 'animate-fadeUpLine' : ''}`}>
           <video 
             className="h-125 w-85 object-cover rounded-3xl"
             autoPlay 
@@ -244,7 +246,7 @@ export default function Home() {
           </div>
         </div>
         <div className="relative ml-[45.5%] -mt-[7.5rem] w-[40vw] text-center">
-          <div>
+          <div className={`${aboutMeSectionInView ? 'animate-fadeUpLine' : ''}`}>
             "Perfection is achieved not when there is nothing more to add, but when there is nothing left to take away." 
             — Antoine de Saint-Exupéry
           </div>
