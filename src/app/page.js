@@ -164,7 +164,7 @@ export default function Home() {
       </section>
 
       {/*ABOUT ME SECTION*/}
-      <section className="relative flex flex-col bg-white pb-50 p-8">
+      <section className="relative flex flex-col bg-white pb-50 p-8 w-full overflow-x-hidden">
         <div ref={aboutMeTitleRef} className="flex">
           <div className="flex flex-col text-5xl w-428 gap-3 ml-8">
             <div className={`opacity-0 pl-42 
@@ -192,10 +192,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div ref={aboutMeSectionRef} className={`opacity-0 flex pt-18 gap-28 justify-between pl-8 pr-8
+        <div ref={aboutMeSectionRef} className={`opacity-0 flex flex-wrap pt-18 gap-12 justify-between pl-8 pr-8
           ${aboutMeSectionInView ? 'animate-fadeUpLine' : ''}`}>
           <video 
-            className="h-125 w-85 object-cover rounded-3xl"
+            className="h-125 w-85 object-cover rounded-3xl flex-shrink-0"
             autoPlay 
             loop 
             muted
@@ -204,16 +204,15 @@ export default function Home() {
             <source src="/video.MOV" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
-          <div className="relative flex flex-col">
+          <div className="relative flex flex-col min-w-[300px] flex-1">
             <div className="absolute bottom-0 left-0 w-6 h-6 border-b-2 border-l-2 border-black"></div>
             <div className="pb-2">MORE</div>
-            <div className="text-[#4F4F4F] w-94 pb-8">
+            <div className="text-[#4F4F4F] max-w-[376px] pb-8">
               I was born in May 13, 2005. Some of my
               favourite hobbies include rock climbing,
               running and creative arts. I'm super
               passionate about coding, and often code
-              in my spare time (check my github contribti-
-              ons). I also have a loving fat
+              in my spare time (check my github contributions). I also have a loving fat
               cat named Mochi!
             </div>
             <div className="pb-2">SOCIAL MEDIA</div>
@@ -229,14 +228,14 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="relative flex flex-col">
+          <div className="relative flex flex-col min-w-[300px] flex-1">
             <div className="absolute top-0 right-0 w-6 h-6 border-t-2 border-r-2 border-black"></div>
             <div className="pb-2">EXPERIENCE</div>
-            <div className="text-[#4F4F4F] w-89 pb-8">
+            <div className="text-[#4F4F4F] max-w-[356px] pb-8">
               I'm currently a tech/education executive
-              at the Univeristy of Auckland computer
+              at the University of Auckland computer
               science club. To find out more about my
-              experience  and skills, click the button 
+              experience and skills, click the button 
               below to find my attached resume!
             </div>
             <div className="pb-2">RESUME BELOW</div>
@@ -245,15 +244,15 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="relative ml-[45.5%] -mt-[7.5rem] w-[40vw] text-center">
+        {/* <div className="relative ml-[45.5%] -mt-[7.5rem] w-[40vw] text-center">
           <div className={`${aboutMeSectionInView ? 'animate-fadeUpLine' : ''}`}>
             "Perfection is achieved not when there is nothing more to add, but when there is nothing left to take away." 
             — Antoine de Saint-Exupéry
           </div>
-        </div>
+        </div> */}
       </section>
 
-      <section className="relative flex justify-center items-center h-dvh w-dvw bg-white pb-50">
+      <section className="relative flex justify-center items-center h-screen w-full bg-white pb-50">
         DESIGNED AND CODED BY ALECK.
       </section>
 
