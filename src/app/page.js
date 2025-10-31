@@ -166,33 +166,29 @@ export default function Home() {
       {/*ABOUT ME SECTION*/}
       <section className="relative flex flex-col bg-white pb-50 p-8 w-full overflow-x-hidden">
         <div ref={aboutMeTitleRef} className="flex">
-          <div className="flex flex-col text-5xl w-428 gap-3 ml-8">
-            <div className={`opacity-0 pl-42 
-              ${aboutMeTitleInView ? 'animate-fadeUpLine' : ''}`}
-              style={{ animationDelay: aboutMeTitleInView ? '0.0s' : '0s' }}
-              >Hello, my name is Aleck! I love coding
-            </div>
-            <div className={`opacity-0 ${aboutMeTitleInView ? 'animate-fadeUpLine' : ''}`}
-              style={{ animationDelay: aboutMeTitleInView ? '0.3s' : '0s' }}
-              >and problem solving, crafting simplicity
-            </div>
-            <div className={`opacity-0 ${aboutMeTitleInView ? 'animate-fadeUpLine' : ''}`}
-              style={{ animationDelay: aboutMeTitleInView ? '0.6s' : '0s' }}
-              >through elegant code.
-            </div>
-          </div>
-          <div className="flex pr-10 pt-2">
-            <div className={`opacity-0 text-5xl flex justify-end w-[25vw] 
+          <div className="flex">
+            <div className={`opacity-0 text-5xl flex
               ${aboutMeTitleInView ? 'animate-fadeUpLine' : ''}`}
               >ABOUT ME
             </div>
-            <div className={`opacity-0 
+            <div className={`opacity-0 pr-24
               ${aboutMeTitleInView ? 'animate-fadeUpLine' : ''}`}
               >[0]
             </div>
           </div>
+          <div className="flex flex-col text-5xl gap-3">
+            <div className={`opacity-0 
+              ${aboutMeTitleInView ? 'animate-fadeUpLine' : ''}`}
+              style={{ animationDelay: aboutMeTitleInView ? '0.0s' : '0s' }}
+              >Hello, I'm Aleck! I'm passionate coder 
+            </div>
+            <div className={`opacity-0 pl-40 ${aboutMeTitleInView ? 'animate-fadeUpLine' : ''}`}
+              style={{ animationDelay: aboutMeTitleInView ? '0.3s' : '0s' }}
+              >and love solving techinhcal problems.
+            </div>
+          </div>
         </div>
-        <div ref={aboutMeSectionRef} className={`opacity-0 flex flex-wrap pt-18 gap-12 justify-between pl-8 pr-8
+        <div ref={aboutMeSectionRef} className={`opacity-0 flex flex-wrap pt-18 gap-12
           ${aboutMeSectionInView ? 'animate-fadeUpLine' : ''}`}>
           <video 
             className="h-125 w-85 object-cover rounded-3xl flex-shrink-0"
@@ -205,20 +201,27 @@ export default function Home() {
             Your browser does not support the video tag.
           </video>
 
-          <div className="relative flex flex-col min-w-[300px] flex-1">
+          <div className="relative flex flex-col flex-1">
             <div className="pb-2">EXPERIENCE</div>
-            <div className="text-[#4F4F4F] max-w-[356px] pb-8">
+            <div className="text-[#4F4F4F] pb-14">
               I'm currently a tech/education executive
               at the University of Auckland computer
-              science club. To find out more about my
-              experience and skills, click the button 
-              below to find my attached resume!
+              science club. To find out more about my skills
+              and experience with in depth descrptionsand 
+              click the button on the right to find my 
+              attached resume!
             </div>
+            <div className="text-lg">PB Tech — Operations Assistant</div>
+            <div className="pb-5 text-sm text-[#4F4F4F]">Nov 2022 – Feb 2023</div>
+            <div className="text-lg">UOACS — Technical/Education Executive</div>
+            <div className="pb-5 text-sm text-[#4F4F4F]">Aug 2025 – Present</div>
+            <div className="text-lg">UOACS — Marketing Executive</div>
+            <div className="text-sm text-[#4F4F4F]">Sep 2025 – Present</div>
           </div>
 
-          <div className="relative flex flex-col min-w-[300px] flex-1">
+          <div className="relative flex flex-col flex-1">
             <div className="pb-2">MORE</div>
-            <div className="text-[#4F4F4F] max-w-[376px] pb-8">
+            <div className="text-[#4F4F4F] max-w-[400px] pb-8">
               I was born in May 13, 2005. Some of my
               favourite hobbies include rock climbing,
               running and creative arts. I'm super
@@ -229,18 +232,6 @@ export default function Home() {
             <div className="pb-2">RESUME BELOW</div>
             <div className="pb-8">
               <Button url="https://www.alecksterminal.com"/>
-            </div>
-            <div className="pb-2">SOCIAL MEDIA</div>
-            <div className="flex gap-4 pb-8">
-              <div className="hover:text-[#979797] text-[#BAB9B9] transition-colors duration-300 cursor-pointer">
-                <FaGithub size={30} />
-              </div>
-              <div className="hover:text-[#979797] text-[#BAB9B9] transition-colors duration-300 cursor-pointer">
-                <FaLinkedin size={30} />
-              </div>
-              <div className="hover:text-[#979797] text-[#BAB9B9] transition-colors duration-300 cursor-pointer">
-                <FaInstagramSquare size={30} />
-              </div>
             </div>
           </div>
         </div>
