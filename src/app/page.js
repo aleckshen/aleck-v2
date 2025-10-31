@@ -207,9 +207,9 @@ export default function Home() {
               I'm currently a tech/education executive
               at the University of Auckland computer
               science club. To find out more about my skills
-              and experience with in depth descrptionsand 
-              click the button on the right to find my 
-              attached resume!
+              and experience with in depth descrptions,
+              click the button on the "MORE" section to find
+              my attached resume!
             </div>
             <div>PB Tech — Operations Assistant</div>
             <div className="pb-5 text-sm text-[#4F4F4F]">Nov 2022 – Feb 2023</div>
