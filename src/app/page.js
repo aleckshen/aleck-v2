@@ -52,7 +52,7 @@ export default function Home() {
     <div>
 
       {/*LANDING PAGE*/}
-      <section className="flex justify-between flex-col h-dvh w-dvw sticky top-0">
+      <section className="flex justify-between flex-col h-dvh sticky top-0">
         <div
           className="absolute inset-0 bg-black pointer-events-none transition-opacity duration-200 ease-linear"
           style={{ opacity: overlayOpacity }}
@@ -88,8 +88,8 @@ export default function Home() {
           transform: `translateY(${parallaxTranslate}px) scale(${parallaxScale})`,
           transition: 'transform 0.1s linear, opacity 0.1s linear'
         }}>
-          <div className="ml-[15px] text-[150px] leading-none font-semibold opacity-0 animate-slideInLeft ">ALECK</div>
-          <div className="text-[150px] ml-[275px] leading-none font-semibold opacity-0 animate-slideInUp [animation-delay:0.3s]">SHEN</div>
+          <div className="ml-[25px] text-[150px] leading-none font-semibold opacity-0 animate-slideInLeft ">ALECK</div>
+          <div className="text-[150px] ml-[275px] mb-2 leading-none font-semibold opacity-0 animate-slideInUp [animation-delay:0.3s]">SHEN</div>
         </div>
       </section>
 
@@ -184,7 +184,7 @@ export default function Home() {
             </div>
             <div className={`opacity-0 pl-40 ${aboutMeTitleInView ? 'animate-fadeUpLine' : ''}`}
               style={{ animationDelay: aboutMeTitleInView ? '0.3s' : '0s' }}
-              >and love solving techinhcal problems.
+              >and love solving technical problems.
             </div>
           </div>
         </div>
