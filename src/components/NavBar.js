@@ -1,13 +1,26 @@
 'use client';
 
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 export default function NavBar() {
 
     const name = 'ALECKSHEN';
+    const pathname = usePathname();
+
+    const handleLogoClick = (e) => {
+        if (pathname === '/') {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    };
+
     return (
         <nav className="flex justify-between items-center p-[15px]">
-            <Link href="/" className="swap-text">
+            <Link href="/" className="swap-text" onClick={handleLogoClick}>
                 {/* split name into letters */}
                 <span className="top">
                 {name.split("").map((letter, i) => (
@@ -22,8 +35,8 @@ export default function NavBar() {
             </Link>
             <div className="flex gap-8">
                 <Link href="/projects" className="relative cursor-pointer hover-underline">PROJECTS</Link>
-                <Link href="#about" className="relative cursor-pointer hover-underline">ABOUT</Link>
-                <Link href="#contact" className="relative cursor-pointer hover-underline">CONTACT</Link>
+                <Link href="#about" scroll={true} className="relative cursor-pointer hover-underline">ABOUT</Link>
+                <Link href="#contact" scroll={true} className="relative cursor-pointer hover-underline">CONTACT</Link>
             </div>
         </nav>
     )

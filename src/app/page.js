@@ -139,7 +139,7 @@ export default function Home() {
               />
             </div>
           </div>
-          <div className={`pb-68 ml-8 mr-8 mt-18 flex gap-8 opacity-0
+          <div className={`pb-45 ml-8 mr-8 mt-18 flex gap-8 opacity-0
             ${projectsPhotosInView ? 'animate-fadeUpLine' : ''}`}>
             <div className="flex-1">
               <ProjectCard
@@ -164,7 +164,7 @@ export default function Home() {
       </section>
 
       {/*ABOUT ME SECTION*/}
-      <section className="relative flex flex-col bg-white pb-50 p-8 w-full overflow-x-hidden">
+      <section id="about" className="relative flex flex-col bg-white pt-20 pb-50 p-8 w-full overflow-x-hidden">
         <div ref={aboutMeTitleRef} className="flex">
           <div className="flex">
             <div className={`opacity-0 text-5xl flex

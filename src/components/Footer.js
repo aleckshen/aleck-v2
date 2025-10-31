@@ -1,6 +1,6 @@
 export default function Footer() {
     return (
-        <div className="relative bg-white h-82 p-8 flex justify-between">
+        <div id="contact" className="relative bg-white h-82 p-8 flex justify-between">
 
             <div className="flex flex-col justify-between pr-34">
                 <div className="flex">
