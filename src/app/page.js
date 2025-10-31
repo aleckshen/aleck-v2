@@ -202,7 +202,7 @@ export default function Home() {
           </video>
 
           <div className="relative flex flex-col flex-1">
-            <div className="pb-2">EXPERIENCE</div>
+            <div className="pb-2 text-lg">EXPERIENCE</div>
             <div className="text-[#4F4F4F] pb-14">
               I'm currently a tech/education executive
               at the University of Auckland computer
@@ -211,17 +211,17 @@ export default function Home() {
               click the button on the right to find my 
               attached resume!
             </div>
-            <div className="text-lg">PB Tech — Operations Assistant</div>
+            <div>PB Tech — Operations Assistant</div>
             <div className="pb-5 text-sm text-[#4F4F4F]">Nov 2022 – Feb 2023</div>
-            <div className="text-lg">UOACS — Technical/Education Executive</div>
+            <div>UOACS — Technical/Education Executive</div>
             <div className="pb-5 text-sm text-[#4F4F4F]">Aug 2025 – Present</div>
-            <div className="text-lg">UOACS — Marketing Executive</div>
+            <div>UOACS — Marketing Executive</div>
             <div className="text-sm text-[#4F4F4F]">Sep 2025 – Present</div>
           </div>
 
           <div className="relative flex flex-col flex-1">
-            <div className="pb-2">MORE</div>
-            <div className="text-[#4F4F4F] max-w-[400px] pb-8">
+            <div className="pb-2 text-lg">MORE</div>
+            <div className="text-[#4F4F4F] max-w-[400px] pb-12">
               I was born in May 13, 2005. Some of my
               favourite hobbies include rock climbing,
               running and creative arts. I'm super
@@ -229,7 +229,7 @@ export default function Home() {
               in my spare time (check my github contributions). I also have a loving fat
               cat named Mochi!
             </div>
-            <div className="pb-2">RESUME BELOW</div>
+            <div className="pb-2 text-lg">RESUME BELOW</div>
             <div className="pb-8">
               <Button url="https://www.alecksterminal.com"/>
             </div>
