@@ -52,7 +52,7 @@ export default function Home() {
     <div>
 
       {/*LANDING PAGE*/}
-      <section className="flex justify-between flex-col h-screen sticky top-0">
+      <section className="flex justify-between flex-col h-dvh w-dvw sticky top-0">
         <div
           className="absolute inset-0 bg-black pointer-events-none transition-opacity duration-200 ease-linear"
           style={{ opacity: overlayOpacity }}
@@ -60,7 +60,7 @@ export default function Home() {
         <div className="opacity-0">
           <NavBar />
         </div>
-        <div className="flex justify-end mt-[175px] mb-[175px] mr-[75px]"
+        <div className="flex justify-end mr-[75px]"
         style={{
           transform: `translateY(${parallaxTranslate}px) scale(${parallaxScale})`,
           transition: 'transform 0.1s linear, opacity 0.1s linear'
@@ -204,8 +204,19 @@ export default function Home() {
             <source src="/video.MOV" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
+
           <div className="relative flex flex-col min-w-[300px] flex-1">
-            <div className="absolute bottom-0 left-0 w-6 h-6 border-b-2 border-l-2 border-black"></div>
+            <div className="pb-2">EXPERIENCE</div>
+            <div className="text-[#4F4F4F] max-w-[356px] pb-8">
+              I'm currently a tech/education executive
+              at the University of Auckland computer
+              science club. To find out more about my
+              experience and skills, click the button 
+              below to find my attached resume!
+            </div>
+          </div>
+
+          <div className="relative flex flex-col min-w-[300px] flex-1">
             <div className="pb-2">MORE</div>
             <div className="text-[#4F4F4F] max-w-[376px] pb-8">
               I was born in May 13, 2005. Some of my
@@ -215,8 +226,12 @@ export default function Home() {
               in my spare time (check my github contributions). I also have a loving fat
               cat named Mochi!
             </div>
+            <div className="pb-2">RESUME BELOW</div>
+            <div className="pb-8">
+              <Button url="https://www.alecksterminal.com"/>
+            </div>
             <div className="pb-2">SOCIAL MEDIA</div>
-            <div className="flex gap-4">
+            <div className="flex gap-4 pb-8">
               <div className="hover:text-[#979797] text-[#BAB9B9] transition-colors duration-300 cursor-pointer">
                 <FaGithub size={30} />
               </div>
@@ -228,28 +243,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="relative flex flex-col min-w-[300px] flex-1">
-            <div className="absolute top-0 right-0 w-6 h-6 border-t-2 border-r-2 border-black"></div>
-            <div className="pb-2">EXPERIENCE</div>
-            <div className="text-[#4F4F4F] max-w-[356px] pb-8">
-              I'm currently a tech/education executive
-              at the University of Auckland computer
-              science club. To find out more about my
-              experience and skills, click the button 
-              below to find my attached resume!
-            </div>
-            <div className="pb-2">RESUME BELOW</div>
-            <div>
-              <Button url="https://www.alecksterminal.com"/>
-            </div>
-          </div>
         </div>
-        {/* <div className="relative ml-[45.5%] -mt-[7.5rem] w-[40vw] text-center">
-          <div className={`${aboutMeSectionInView ? 'animate-fadeUpLine' : ''}`}>
-            "Perfection is achieved not when there is nothing more to add, but when there is nothing left to take away." 
-            — Antoine de Saint-Exupéry
-          </div>
-        </div> */}
       </section>
 
       <section className="relative flex justify-center items-center h-screen w-full bg-white pb-50">
