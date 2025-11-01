@@ -1,4 +1,20 @@
+'use client';
+import { useEffect, useState } from "react";
+import { DateTime } from "luxon";
+
 export default function Footer() {
+
+    const [nzTime, setNzTime] = useState(
+        DateTime.now().setZone("Pacific/Auckland").toISO()
+    );
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setNzTime(DateTime.now().setZone("Pacific/Auckland").toISO());
+        }, 1000);
+        return () => clearInterval(interval);
+    }, []);
+
     return (
         <div id="contact" className="relative bg-white h-82 p-8 flex justify-between">
 
@@ -26,7 +42,7 @@ export default function Footer() {
                 </div>
                 <div className="flex flex-col gap-3">
                     <div>New Zealand Local Time</div>
-                    <div>10:07 AM</div>
+                    <div>{nzTime}</div>
                 </div>
             </div>
 
