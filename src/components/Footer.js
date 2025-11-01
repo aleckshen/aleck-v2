@@ -15,13 +15,13 @@ export default function Footer() {
             <div className="flex flex-col justify-between">
                 <div className="flex">
                     <div className="flex flex-col gap-3 pr-26">
-                        <div>GITHUB</div>
-                        <div>LINKEDIN</div>
-                        <div>INSTAGRAM</div>
+                        <a href="https://github.com/aleckshen" target="_blank">GITHUB</a>
+                        <a href="https://www.linkedin.com/in/aleckshen/" target="_blank">LINKEDIN</a>
+                        <a href="https://www.instagram.com/alecksn/" target="_blank">INSTAGRAM</a>
                     </div>
                     <div className="flex flex-col gap-3">
-                        <div>EMAIL</div>
-                        <div>TIKTOK</div>
+                        <a href="mailto:aleckshn@gmail.com">EMAIL</a>
+                        <a href="https://www.tiktok.com/@aleckshen" target="_blank">TIKTOK</a>
                     </div>
                 </div>
                 <div className="flex flex-col gap-3">
