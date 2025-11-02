@@ -5,9 +5,6 @@ import NavBar from '@/components/NavBar';
 import Button from '@/components/Button';
 import ProjectCard from '@/components/ProjectCard';
 import useScrollIntoView from '@/hooks/useScrollIntoView';
-import { FaGithub } from "react-icons/fa";
-import { FaInstagramSquare } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
 
 export default function Home() {
 
@@ -76,7 +73,7 @@ export default function Home() {
               </div>
             ))}
           </div>
-          <div className="flex flex-col justify-center opacity-0 animate-fadeUpLine" style={{ animationDelay: '1.6s' }}>
+          <div className="flex flex-col justify-center opacity-0 animate-fadeUpLine" style={{ animationDelay: '1.9s' }}>
             <div className="mb-[5px]">
               Terminal website?!?
             </div>

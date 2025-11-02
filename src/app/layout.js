@@ -1,3 +1,4 @@
+
 import "./globals.css";
 import 'lenis/dist/lenis.css';
 import { Inter } from 'next/font/google';
@@ -23,7 +24,7 @@ export default function RootLayout({ children }) {
       <body>
         <div
           className="fixed top-0 left-0 w-full z-50 opacity-0 animate-fadeAfterIntro"
-          style={{ animationDelay: '1.6s' }}
+          style={{ animationDelay: '1.9s' }}
         >
           <NavBar />
         </div>
