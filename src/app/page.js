@@ -99,7 +99,7 @@ export default function Home() {
             </div>
             <div className="pt-21">[4]</div>
           </div>
-          <div ref={projectsRef} className="text-5xl pt-20 pl-20 pb-8">
+          <div ref={projectsRef} className="text-5xl pt-20 pl-15 pb-8">
             <div 
               className={`opacity-0 ${projectsInView ? 'animate-fadeUpLine' : ''}`}
               style={{ animationDelay: projectsInView ? '0s' : '0s' }}
@@ -107,7 +107,7 @@ export default function Home() {
               Here are some of the projects I have worked
             </div>
             <div 
-              className={`pl-54 pt-2 opacity-0 ${projectsInView ? 'animate-fadeUpLine' : ''}`}
+              className={`pl-46 pt-2 opacity-0 ${projectsInView ? 'animate-fadeUpLine' : ''}`}
               style={{ animationDelay: projectsInView ? '0.3s' : '0s' }}
             >
               on across my years studying comp sci.

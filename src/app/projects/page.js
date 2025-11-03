@@ -24,7 +24,7 @@ export default function Projects() {
                     Here are some of my recent projects, with
                 </div>
                 <div 
-                    className={`pl-54 pt-2 opacity-0 ${projectsInView ? 'animate-fadeUpLine' : ''}`}
+                    className={`pl-48 pt-2 opacity-0 ${projectsInView ? 'animate-fadeUpLine' : ''}`}
                     style={{ animationDelay: projectsInView ? '0.3s' : '0s' }}
                 >   
                     more in depth details and description.
@@ -42,6 +42,13 @@ export default function Projects() {
                     image={"/terminal-website.png"}
                     hoverImage={"/hover-terminal-website.png"}
                     />
+                    <div className="pt-5 pb-5">
+                        This portfolio transforms the conventional web-page experience 
+                        into an engaging command-line interface. Instead of scrolling through 
+                        sections, visitors type commands, explore my projects, and navigate a dynamic, 
+                        terminal-inspired UI, blending developer aesthetics with modern web 
+                        architecture.
+                    </div>
                 </div>
                 <div className="flex-1">
                     <ProjectCard
@@ -51,6 +58,12 @@ export default function Projects() {
                     image={"/personal-website.png"}
                     hoverImage={"/hover-personal-website.png"}
                     />
+                    <div className="pt-5 pb-5">
+                        This portfolio is a sleek, responsive portfolio designed to showcase projects and 
+                        writing with clarity and performance, featuring a fast, polished interface and a 
+                        clean, maintainable architecture that emphasizes both design quality and developer 
+                        experience.
+                    </div>
                 </div>
                 </div>
                 <div className={`pb-68 ml-8 mr-8 mt-18 flex gap-8 opacity-0
@@ -63,6 +76,13 @@ export default function Projects() {
                     image={"/pylib.png"}
                     hoverImage={"/hover-pylib.png"}
                     />
+                    <div className="pt-5 pb-5">
+                        pylib is a lightweight Python CLI tool that randomly selects a library from across
+                         Auckland, helping users discover new spots to visit or study. Designed with simplicity 
+                         and speed in mind, it provides an easy, interactive way to explore Auckland’s libraries 
+                         directly from the command line — perfect for locals, students, or anyone wanting a spontaneous 
+                         reading destination.
+                    </div>
                 </div>
                 <div className="flex-1">
                     <ProjectCard
@@ -72,6 +92,12 @@ export default function Projects() {
                     image={"/hackathon.png"}
                     hoverImage={"/hover-hackathon.png"}
                     />
+                    <div className="pt-5 pb-5">
+                        This is a hackathon starter template designed for students participating in the UOACS/WINCS 
+                        hackathon. It provides a pre-configured project structure with essential tooling, standard 
+                        folder organization, and example files, allowing participants to quickly start building their 
+                        projects without spending time on setup.
+                    </div>
                 </div>
                 </div>
             </div>
