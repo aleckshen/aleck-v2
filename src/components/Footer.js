@@ -46,11 +46,10 @@ export default function Footer() {
                 </div>
             </div>
 
-            <div className="relative flex-1 -mr-2 -mb-1">
-                <div className="absolute top-0 right-0 text-[150px] font-semibold leading-[0.8] -m-1">SHEN</div>
-                <div className="absolute bottom-0 right-0 text-[150px] font-semibold leading-[0.8] pr-42">ALECK</div>
+            <div className="flex-1 flex flex-col justify-between -mr-2 -mb-1 text-right flex-wrap">
+                <div className="text-[150px] font-semibold leading-[0.8] text-right">SHEN</div>
+                <div className="text-[150px] font-semibold leading-[0.8] text-right pr-32">ALECK</div>
             </div>
-
         </div>
     )
 }
