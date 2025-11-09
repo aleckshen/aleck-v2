@@ -223,12 +223,11 @@ export default function Home() {
               favourite hobbies include rock climbing,
               running and creative arts. I'm super
               passionate about coding, and often code
-              in my spare time (check my github contributions). I also have a loving fat
-              cat named Mochi!
+              in my spare time (check my github contributions). I also have a loving cat named Mochi!
             </div>
             <div className="pb-2 text-lg">RESUME BELOW</div>
             <div className="pb-8">
-              <Button url="https://www.alecksterminal.com"/>
+              <Button url="/Aleck_Resume.pdf"/>
             </div>
           </div>
         </div>
