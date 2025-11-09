@@ -124,6 +124,7 @@ export default function Home() {
                 details={"—  next, react, typescript"}
                 image={"/terminal-website.png"}
                 hoverImage={"/hover-terminal-website.png"}
+                href={"https://www.alecksterminal.com/"}
               />
             </div>
             <div className="flex-1">
@@ -133,6 +134,7 @@ export default function Home() {
                 details={"—  next, react, javascript"}
                 image={"/personal-website.png"}
                 hoverImage={"/hover-personal-website.png"}
+                href={"https://aleckshen.com"}
               />
             </div>
           </div>
@@ -145,6 +147,7 @@ export default function Home() {
                 details={"— python"}
                 image={"/pylib.png"}
                 hoverImage={"/hover-pylib.png"}
+                href={"https://github.com/aleckshen/pylib"}
               />
             </div>
             <div className="flex-1">
@@ -154,6 +157,7 @@ export default function Home() {
                 details={"—  react, vite"}
                 image={"/hackathon.png"}
                 hoverImage={"/hover-hackathon.png"}
+                href={"https://github.com/aleckshen/uoawinCS-skeleton"}
               />
             </div>
           </div>

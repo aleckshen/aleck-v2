@@ -1,8 +1,9 @@
 import Image from "next/image";
+import Link from "next/link";
 
-export default function ProjectCard({ bgColor, title, details, image, hoverImage }) {
-    return (
-        <div className="flex-1">
+export default function ProjectCard({ bgColor, title, details, image, hoverImage, href }) {
+    const cardContent = (
+        <>
             <div 
                 className="relative bg-[#D2D6E0] w-full h-110 flex justify-center items-center overflow-hidden group cursor-pointer"
                 style={{ backgroundColor: bgColor }}
@@ -33,6 +34,18 @@ export default function ProjectCard({ bgColor, title, details, image, hoverImage
             </div>
             <div className="pt-2 text-xl">{title}</div>
             <div className="text-[#727272]">{details}</div>
+        </>
+    );
+
+    return (
+        <div className="flex-1">
+            {href ? (
+                <Link href={href} target="_blank" rel="noopener noreferrer">
+                    {cardContent}
+                </Link>
+            ) : (
+                cardContent
+            )}
         </div>
     );
 }

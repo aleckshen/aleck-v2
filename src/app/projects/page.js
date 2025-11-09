@@ -41,6 +41,7 @@ export default function Projects() {
                     details={"—  next, react, typescript"}
                     image={"/terminal-website.png"}
                     hoverImage={"/hover-terminal-website.png"}
+                    href={"https://alecksterminal.com"}
                     />
                     <div className="pt-5 pb-5">
                         This portfolio transforms the conventional web-page experience 
@@ -57,6 +58,7 @@ export default function Projects() {
                     details={"—  next, react, javascript"}
                     image={"/personal-website.png"}
                     hoverImage={"/hover-personal-website.png"}
+                    href={"https://aleckshen.com"}
                     />
                     <div className="pt-5 pb-5">
                         This portfolio is a sleek, responsive portfolio designed to showcase projects and 
@@ -75,6 +77,7 @@ export default function Projects() {
                     details={"— python"}
                     image={"/pylib.png"}
                     hoverImage={"/hover-pylib.png"}
+                    href={"https://github.com/aleckshen/pylib"}
                     />
                     <div className="pt-5 pb-5">
                         pylib is a lightweight Python CLI tool that randomly selects a library from across
@@ -91,6 +94,7 @@ export default function Projects() {
                     details={"—  react, vite"}
                     image={"/hackathon.png"}
                     hoverImage={"/hover-hackathon.png"}
+                    href={"https://github.com/aleckshen/uoawinCS-skeleton"}
                     />
                     <div className="pt-5 pb-5">
                         This is a hackathon starter template designed for students participating in the UOACS/WINCS 
